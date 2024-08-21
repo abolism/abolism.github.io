@@ -33,7 +33,7 @@ header a {
     display: inline-block;
 }
 
-.photo-container {
+/* .photo-container {
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -46,6 +46,24 @@ header a {
     width: 100%;
     height: 100%;
     object-fit: cover;
+} */
+
+.image-container {
+    width: 200px; /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #ddd;
 }
 
 /* Main Content */
