@@ -9,11 +9,19 @@ line-height: 1.6;
 }
 
 /* Header */
-header {
+/* header {
 background-color: #f4f4f4;
 color: black;
 padding: 40px 20px;
 text-align: left;
+} */
+
+
+header {
+background-color: black;
+color: white;
+text-align: right;
+padding: 20px;
 }
 
 .profile-container {
