@@ -58,7 +58,7 @@ flex-grow: 1;
 margin: 0;
 font-size: 2.5em;
 color: white;
-text-align: middle;
+text-align: left;
 }
 
 .university {
@@ -73,18 +73,23 @@ font-size: 1em;
 
 .contact-info {
 margin-top: 20px;
-text-align: left;
+text-align: middle;
+color: white;
 }
 
 .contact-info h2 {
 margin: 0;
 font-size: 1.8em;
 border-bottom: none;
+text-align: middle;
+color: white;
 }
 
 .contact-info p {
 margin: 5px 0;
 font-size: 1em;
+text-align: middle;
+color: white;
 }
 
 header a {
