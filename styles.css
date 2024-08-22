@@ -73,7 +73,7 @@ font-size: 1em;
 
 .contact-info {
 margin-top: 20px;
-text-align: middle;
+text-align: center;
 color: white;
 }
 
@@ -81,14 +81,14 @@ color: white;
 margin: 0;
 font-size: 1.8em;
 border-bottom: none;
-text-align: middle;
+text-align: center;
 color: white;
 }
 
 .contact-info p {
 margin: 5px 0;
 font-size: 1em;
-text-align: middle;
+text-align: center;
 color: white;
 }
 
