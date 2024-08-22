@@ -26,7 +26,8 @@ padding: 40px 20px;
 
 .profile-container {
 display: flex;
-align-items: flex-start;
+/* align-items: flex-start;  */
+align-items: right;
 max-width: 1200px;
 margin: 0 auto;
 }
