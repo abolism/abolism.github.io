@@ -91,7 +91,8 @@ font-size: 1em;
 .contact-info {
 margin-top: 20px;
 text-align: center;
-color: white;
+/* color: white; */
+color: black;
 }
 
 .contact-info h2 {
