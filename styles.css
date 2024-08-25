@@ -208,13 +208,13 @@ background-color: black;
 color: white;
 text-align: center;
 padding: 20px;
-width: 100%;
+/* width: 100%; */
 }
 
 footer p {
 margin: 0;
 font-size: 1em;
-width: 100%;
+/* width: 100%; */
 }
 
 /* Responsive design */
