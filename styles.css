@@ -98,6 +98,9 @@ flex-grow: 1;
 .cv-pdf {
     color: white;
     float: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .name {
