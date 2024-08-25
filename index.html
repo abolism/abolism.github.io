@@ -65,6 +65,51 @@
             display: flex; /* Ensure flexbox is used for section */
             flex-direction: column; /* Default to column layout */
     }
+
+
+
+    .social-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    }
+
+    .left-links {
+    display: flex;
+    align-items: center;
+    }
+
+    .left-links .link {
+    margin-right: 15px;
+    }
+
+    .left-links a {
+    margin-right: 10px;
+    }
+
+    .right-links {
+    display: flex;
+    align-items: center;
+    }
+
+    .cv-download {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    }
+
+    .cv-download:hover {
+    text-decoration: underline;
+    }
+
+    .social-icon {
+    width: 24px;
+    height: 24px;
+    }
+
+    
+    
     @media (min-width: 768px) {
             .section {
                 flex-direction: row; /* Use row layout on larger screens */
@@ -94,7 +139,7 @@
                 <br><br><br><br>
             </div>
         </div>
-        <div class="social-links">
+<!--         <div class="social-links">
             <p class="link"><strong><i>Email: <a href="mailto:eshagh.abolfazl@gmail.com">eshagh.abolfazl@gmail.com</a></i></strong></p>
             <a href="https://www.linkedin.com/in/abolfazl-eshagh-b4387a201" target="_blank">
                 <img src="linkedin_logo2.png" alt="LinkedIn" class="social-icon">
@@ -102,6 +147,20 @@
             <a href="https://github.com/abolism" target="_blank">
                 <img src="github_logo2.png" alt="GitHub" class="social-icon">
             </a>
+        </div> -->
+        <div class="social-links">
+            <div class="left-links">
+                <p class="link"><strong><i>Email: <a href="mailto:eshagh.abolfazl@gmail.com">eshagh.abolfazl@gmail.com</a></i></strong></p>
+                <a href="https://www.linkedin.com/in/abolfazl-eshagh-b4387a201" target="_blank">
+                    <img src="linkedin_logo2.png" alt="LinkedIn" class="social-icon">
+                </a>
+                <a href="https://github.com/abolism" target="_blank">
+                    <img src="github_logo2.png" alt="GitHub" class="social-icon">
+                </a>
+            </div>
+            <div class="right-links">
+                <a href="path_to_cv.pdf" target="_blank" class="cv-download">Download CV</a>
+            </div>
         </div>
     </header>
 
