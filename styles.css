@@ -23,8 +23,8 @@ header {
 }
 
 .image-container {
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
     margin-right: 20px;
     flex-shrink: 0; /* Ensures the image does not shrink */
 }
