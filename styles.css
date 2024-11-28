@@ -93,10 +93,13 @@ main {
 .interests {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; /* Three equal-width columns */
-    grid-template-rows: auto auto; /* Auto height for rows */
-    gap: 10px; /* Space between rectangles */
-    justify-items: center; /* Center-align rectangles within their cells */
-    margin-top: 10px;
+    grid-template-rows: auto auto; /* Two rows with dynamic height */
+    gap: 20px; /* Space between rectangles */
+    justify-content: center; /* Centers the entire grid horizontally */
+    width: 100%; /* Ensure the container spans the full width */
+    max-width: 1200px; /* Optional: Limit the maximum width */
+    margin: 0 auto; /* Center the grid on the page */
+    padding: 10px; /* Optional: Add padding around the grid */
 }
 
 /* Position specific rectangles */
@@ -123,7 +126,7 @@ main {
 .interests .interest:nth-child(5) {
     grid-column: 3; /* Third column */
     grid-row: 1 / 3; /* Spans both rows */
-    align-self: center; /* Centers the rectangle vertically */
+    align-self: center; /* Centers vertically in the column */
 }
 
 /* Rectangle Styling */
@@ -137,7 +140,11 @@ main {
     font-weight: bold;
     border-radius: 10px;
     text-align: center;
+    background-color: #4CAF50; /* Default background color (can be overridden inline) */
+    min-width: 100px; /* Optional: Prevent rectangles from becoming too narrow */
 }
+
+/* Responsive Adjustments */
 @media (max-width: 768px) {
     .interests {
         grid-template-columns: 1fr 1fr; /* Two columns */
@@ -147,6 +154,17 @@ main {
     .interests .interest:nth-child(5) {
         grid-column: 1 / 3; /* Full width on smaller screens */
         grid-row: 3; /* Moves to the last row */
+    }
+}
+
+@media (max-width: 480px) {
+    .interests {
+        grid-template-columns: 1fr; /* Single column */
+        grid-template-rows: auto; /* Rows adjust dynamically */
+    }
+
+    .interests .interest {
+        width: 100%; /* Full width rectangles */
     }
 }
 
