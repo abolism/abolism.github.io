@@ -89,6 +89,24 @@ main {
     margin-bottom: 40px;
 }
 
+.interests {
+    display: flex;
+    flex-wrap: wrap; /* Ensures rectangles wrap to the next line on smaller screens */
+    gap: 10px; /* Adds space between rectangles */
+    margin-top: 10px;
+}
+
+.interest {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 10px; /* Rounded corners */
+    color: white; /* White text for contrast */
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    flex: 0 1 auto; /* Flex properties for responsive behavior */
+}
+
 h2 {
     border-bottom: 2px solid black;
     padding-bottom: 5px;
