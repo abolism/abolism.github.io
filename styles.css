@@ -91,20 +91,36 @@ main {
 
 .interests {
     display: flex;
-    flex-wrap: wrap; /* Ensures rectangles wrap to the next line on smaller screens */
+    flex-wrap: wrap; /* Allows wrapping to the next line */
     gap: 10px; /* Adds space between rectangles */
+    justify-content: center; /* Centers the rectangles horizontally */
     margin-top: 10px;
 }
 
 .interest {
-    display: inline-block;
-    padding: 20px 15px; /* Increased height by doubling vertical padding */
+    display: flex;
+    justify-content: center; /* Centers text horizontally */
+    align-items: center; /* Centers text vertically */
+    padding: 20px 15px; /* Double the height */
+    width: calc(33.33% - 20px); /* Three rectangles in one row */
     border-radius: 10px; /* Rounded corners */
-    color: white; /* White text for contrast */
+    color: white; /* Ensures text is white */
     font-size: 1em;
     font-weight: bold;
     text-align: center;
-    flex: 0 1 auto; /* Flex properties for responsive behavior */
+    background-color: #4CAF50; /* Default background color (can be overridden inline) */
+}
+
+@media (max-width: 768px) {
+    .interest {
+        width: calc(50% - 20px); /* Two rectangles per row for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .interest {
+        width: 100%; /* One rectangle per row for very small screens */
+    }
 }
 
 h2 {
