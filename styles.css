@@ -89,7 +89,14 @@ main {
     margin-bottom: 40px;
 }
 
+.project-images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
 .interests {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; /* Three equal-width columns */
